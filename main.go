@@ -1,17 +1,22 @@
 package main
 
 import (
-	"fmt";
-	"os";
-	"io";
-	"log";
+	"fmt"
+	"os"
+	"io"
+	"log"
 	"encoding/csv"
+	"os/exec"
 )
 
-// TODO check for "things.sh"
-// If you need it. Use brew install things.sh
-
 func main() {
+
+	thingsDir, err := exec.LookPath("things.sh")
+	if err != nil || len(thingsDir) < 1 {
+		fmt.Println("Couldn't find 'things.sh'. Please install with 'brew install things.sh'")
+		return
+	}
+
 	home, err := os.UserHomeDir()
 	if err != nil {
 		log.Fatalf("Can't find the home directory")
