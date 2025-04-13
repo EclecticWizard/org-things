@@ -1,11 +1,14 @@
 #+title: Readme
 * Convert a Things CSV Export to an Org TODO list
 ** Dependencies
-Requires [things.sh][https://github.com/AlexanderWillner/things.sh]
+Requires [[https://github.com/AlexanderWillner/things.sh][things.sh]]
 ** Usage
 Run this with `go run` after exporting you Things csv to ~/Todo
 
-** TODO Add more fields to properties
-** TODO Check for things.sh at launch
-** TODO Allow users to specify path to their csv
-** TODO Fix due dates so they aren't in the 70's
+** TODO
+- [ ] Add more fields to properties
+- [ ] Check for things.sh at launch
+- [ ] Allow users to specify path to their csv
+- [ ] Fix due dates so they aren't in the 70's
+- [ ] Pass arguments to add certain fields to Todos
+- [ ] Group Todos by Projects or Areas

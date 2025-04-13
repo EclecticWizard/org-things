@@ -8,8 +8,8 @@ import (
 	"encoding/csv"
 )
 
-// TODO check for "things-cli"
-// If you need it. Use pipx install things-cli
+// TODO check for "things.sh"
+// If you need it. Use brew install things.sh
 
 func main() {
 	home, err := os.UserHomeDir()
