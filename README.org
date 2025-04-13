@@ -1,14 +1,17 @@
 #+title: Readme
 * Convert a Things CSV Export to an Org TODO list
+Might be a bit of a niche problem. But if, like me, you regularly swap between a Mac and Linux workstation and want a way to import your Things 3 todo list across to Emacs, this could help you out.
 ** Dependencies
 Requires [[https://github.com/AlexanderWillner/things.sh][things.sh]]
 ** Usage
-Run this with `go run` after exporting you Things csv to ~/Todo
+Run this with `go run main.go` after exporting you Things csv to ~/Todo
 
 ** TODO
 - [ ] Add more fields to properties
 - [ ] Check for things.sh at launch
 - [ ] Allow users to specify path to their csv
 - [ ] Fix due dates so they aren't in the 70's
+  - This appears to be an issue with how "things.sh" exports the due dates
+  - Doesn't impact any other dates (creation, modified, etc.)
 - [ ] Pass arguments to add certain fields to Todos
 - [ ] Group Todos by Projects or Areas
